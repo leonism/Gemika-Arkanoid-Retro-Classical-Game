@@ -11,6 +11,7 @@ Step into the neon-lit world of our Gemika Arkanoid Retro Classical Game – the
 3. [Getting Started](#getting-started-)
    - [Prerequisites](#prerequisites-)
    - [Installing Python](#installing-python-)
+   - [Installing Pip](#installing-pip-)
    - [Installing Pygame](#installing-pygame-)
    - [Installation](#installation-)
 4. [How to Play](#how-to-play-)
@@ -76,15 +77,39 @@ Ensure you have Python installed on your machine.
    python3 --version
    ```
 
+### Installing Pip 📦
+
+After installing Python, you may need to install pip, the package manager for Python, to install additional libraries such as Pygame.
+
+#### Windows
+
+Pip usually comes with Python installation on Windows. You can verify if pip is installed by running the following command in Command Prompt:
+
+```bash
+pip --version
+```
+
+#### macOS and
+
+Linux
+
+Pip should be installed along with Python on macOS and most Linux distributions. You can verify its installation by running the following command in Terminal:
+
+```bash
+pip --version
+```
+
+If pip is not installed, you can install it using the instructions provided on the [official pip website](https://pip.pypa.io/en/stable/installation/).
+
 ### Installing Pygame 🕹️
 
-Install Pygame with the following command:
+Once you have Python and pip installed, you can install Pygame using pip:
 
 ```bash
 pip install pygame
 ```
 
-or
+Or on macOS and Linux:
 
 ```bash
 pip3 install pygame
@@ -139,32 +164,6 @@ pip3 install pygame
 - **Break All Bricks**: Your goal is to break all the bricks to advance to the next level.
 - **Score Points**: Each brick you break scores points. Try to achieve the highest score!
 - **Monitor Lives**: You start with 3 lives. Losing the ball costs a life. Lose all lives, and the game is over.
-
-## File Structure 🗂️
-
-```
-Gemika-Arkanoid-Retro-Classical-Game/
-│
-├── assets/                   # Assets folder containing sounds and images
-│   ├── sounds/               # Sound files are not included
-│   │   ├── hit.wav
-│   │   ├── lose_life.wav
-│   │   └── game_over.wav
-│   ├── images/               # Image files are not included
-│   │   ├── brick.png
-│   │   ├── paddle.png
-│   │   └── ball.png
-│   └── leaderboard.txt       # Leaderboard file (created automatically)
-│
-├── arkanoid/                 # Game source code
-│   ├── __init__.py           # Init file to mark the package
-│   ├── config.py             # Configuration file
-│   ├── game.py               # Main game logic
-│   ├── sprites.py            # Sprite classes
-│   ├── utils.py              # Utility functions
-│
-└── run_game.py               # Entry point to run the game
-```
 
 ## Configuration ⚙️
 
@@ -241,9 +240,7 @@ This suggests that the `pip` command is pointing to a Python interpreter that do
    python run_game.py
    ```
 
-By following these steps, you should be able to resolve the issues and get your Arkanoid game running smoothly. If you
-
-encounter any further issues, please provide the specific error messages so we can assist you further.
+By following these steps, you should be able to resolve the issues and get your Arkanoid game running smoothly. If you encounter any further issues, please provide the specific error messages so we can assist you further.
 
 ## Credits 🎤
 
