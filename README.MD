@@ -185,6 +185,8 @@ This indicates that Pygame is not installed. Install it using:
 pip install pygame
 ```
 
+Or else if you encountered the following error :
+
 ```bash
 `/usr/local/bin/pip: bad interpreter: /usr/bin/python: no such file or directory`
 ```
