@@ -89,9 +89,7 @@ Pip usually comes with Python installation on Windows. You can verify if pip is 
 pip --version
 ```
 
-#### macOS and
-
-Linux
+#### macOS and Linux
 
 Pip should be installed along with Python on macOS and most Linux distributions. You can verify its installation by running the following command in Terminal:
 
@@ -204,6 +202,9 @@ This suggests that the `pip` command is pointing to a Python interpreter that do
 
    ```bash
    python3 -m ensurepip --upgrade
+   ```
+
+   ```bash
    python3 -m pip install pygame
    ```
 
