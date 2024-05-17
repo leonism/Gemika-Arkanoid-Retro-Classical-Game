@@ -1,6 +1,6 @@
-### README.md
-
 # 🕹️ Gemika Arkanoid Retro Classical Game 🎮
+
+![Gemika Arkanoid Retro Classical Game](gemika-arkanoid-retro-classical-game.png "Welcome to the ultimate retro-style Arkanoid game!")
 
 Welcome to the ultimate retro-style Arkanoid game! Relive the 80s arcade glory and break all the bricks to climb to the top of the leaderboard! 🚀
 
@@ -10,12 +10,16 @@ Welcome to the ultimate retro-style Arkanoid game! Relive the 80s arcade glory a
 2. [Features](#features-)
 3. [Getting Started](#getting-started-)
    - [Prerequisites](#prerequisites-)
-   - [Installation](#installation-)
    - [Installing Python](#installing-python-)
+   - [Installing Pygame](#installing-pygame-)
+   - [Installation](#installation-)
 4. [How to Play](#how-to-play-)
 5. [File Structure](#file-structure-)
 6. [Configuration](#configuration-)
 7. [Troubleshooting](#troubleshooting-)
+   - [ModuleNotFoundError: No module named 'pygame'](#modulenotfounderror-no-module-named-pygame)
+   - [Step-by-Step Solution](#step-by-step-solution)
+   - [Additional Tips](#additional-tips)
 8. [Credits](#credits-)
 9. [License](#license-)
 
@@ -35,6 +39,10 @@ Welcome to our modern take on the classic 80s arcade game, Arkanoid! This game i
 ## Getting Started 🚀
 
 Before you begin, make sure you have Python installed (preferably version 3.6 or higher). You will also need to install the Pygame library, which is used to create games in Python.
+
+### Prerequisites 🛠️
+
+Ensure you have Python installed on your machine.
 
 ### Installing Python 🐍
 
@@ -76,25 +84,31 @@ Install Pygame with the following command:
 pip install pygame
 ```
 
+or
+
+```bash
+pip3 install pygame
+```
+
 ### Installation 📥
 
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/leonism/gemika-arkanoid-game.git
-   cd arkanoid-game
+   git clone https://github.com/leonism/Gemika-Arkanoid-Retro-Classical-Game.git
+   cd Gemika-Arkanoid-Retro-Classical-Game/
    ```
 
 2. **Ensure Directory Structure**:
    Make sure your directory structure looks like this:
 
    ```
-   arkanoid/
+   Gemika-Arkanoid-Retro-Classical-Game/
    │
    ├── assets/
    │   ├── sounds/
-   │   │   ├── hit.wav
-   │   │   ├── lose_life.wav
+   │   │   ├── hit.wav           # Sound files are not included, so you may customize
+   │   │   ├── lose_life.wav     # Images files are not included, so you may customize
    │   │   └── game_over.wav
    │   ├── images/
    │   │   ├── brick.png
@@ -177,7 +191,7 @@ pip install pygame
 
 This suggests that the `pip` command is pointing to a Python interpreter that does not exist on your system.
 
-#### Step-by-Step Solution
+### Step-by-Step Solution
 
 1. **Verify Python Installation**:
 
@@ -225,9 +239,15 @@ This suggests that the `pip` command is pointing to a Python interpreter that do
    python run_game.py
    ```
 
-By following these steps, you should be able to resolve the issues and get your Arkanoid game running smoothly. If you encounter any further issues, please provide the specific error messages so we can assist you further.
+By following these steps, you should be able to resolve the issues and get your Arkanoid game running smoothly. If you
+
+encounter any further issues, please provide the specific error messages so we can assist you further.
 
 ## Credits 🎤
 
 - **Sound Effects**: Thanks to [FreeSound](https://freesound.org/), [Zapsplat](https://www.zapsplat.com/), and [SoundBible](http://soundbible.com/) for providing the sound assets.
-- **Images**: Special thanks to [OpenGameArt](https://opengameart.org/), [Kenney.nl](https://kenney.nl/assets), and [GameArt2D](https://www.game
+- **Images**: Special thanks to [OpenGameArt](https://opengameart.org/), [Kenney.nl](https://kenney.nl/assets), and [GameArt2D](https://www.gameart2d.com)
+
+## License 📄
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
